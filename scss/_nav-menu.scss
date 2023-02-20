@@ -6,6 +6,7 @@
   height: 20px;
   width: 28px;
   cursor: pointer;
+  @include transition-ease;
 
   &_options {
     position: absolute;
@@ -14,6 +15,7 @@
     width: 28px;
     height: 3px;
     background: set-text-color($primary-color);
+    @include transition-ease;
 
     &::before {
       content: '';
@@ -22,6 +24,7 @@
       width: 28px;
       height: 3px;
       background: set-text-color($primary-color);
+      @include transition-ease;
     }
 
     &::after {
@@ -31,6 +34,7 @@
       width: 20px;
       height: 3px;
       background: set-text-color($primary-color);
+      @include transition-ease;
     }
 
     &.open {
@@ -72,6 +76,7 @@
     list-style-type: none;
     padding-right: 1rem;
     transform: translateY(-100%);
+    @include transition-ease;
 
     &.open {
       transform: translateY(0);
@@ -79,6 +84,7 @@
 
     &_item {
       transform: translateX(100vw);
+      @include transition-ease;
 
       &.open {
        transform: translateX(0); 
@@ -95,6 +101,7 @@
       text-transform: uppercase;
       padding: 2rem 0;
       font-weight: 300;
+      @include transition-ease;
 
       &:hover {
         color: $secondary-color;
