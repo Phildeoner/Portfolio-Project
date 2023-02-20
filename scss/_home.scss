@@ -13,13 +13,13 @@
     url('/images/New\ Project\ edit.jpg') center top;
   background-size: cover;
 
-  &__name {
+  &_name {
     font-size: 5rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     border-bottom: 2px solid set-text-color($primary-color);
 
-    &--last {
+    &-last {
       color: $secondary-color;
       font-weight: 700;
     }
