@@ -4,7 +4,7 @@
   &_bio-image {
     height: 40vh;
     width: 100%;
-    background: 
+    background:
       linear-gradient(
         to right,
         rgba($primary-color, 0.9),
@@ -27,7 +27,6 @@
       margin-bottom: 1rem;
     }
   }
-  
 
   &_items {
     width: 55vw;
@@ -56,6 +55,7 @@
       width: 100%;
       background: $secondary-color;
       opacity: 0;
+
       @include transition-ease;
     }
 
@@ -64,6 +64,7 @@
         top: 0;
         opacity: 0.8;
       }
+
       #projects_btn {
         opacity: 1;
       }
@@ -85,11 +86,11 @@
   &_btn {
     opacity: 0;
     color: set-text-color($secondary-color);
+
     @include transition-ease;
 
     &:hover {
       color: set-text-color(set-text-color($secondary-color));
     }
   }
-  
 }

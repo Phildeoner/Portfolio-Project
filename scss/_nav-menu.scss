@@ -6,6 +6,7 @@
   height: 20px;
   width: 28px;
   cursor: pointer;
+
   @include transition-ease;
 
   &_options {
@@ -15,6 +16,7 @@
     width: 28px;
     height: 3px;
     background: set-text-color($primary-color);
+
     @include transition-ease;
 
     &::before {
@@ -24,6 +26,7 @@
       width: 28px;
       height: 3px;
       background: set-text-color($primary-color);
+
       @include transition-ease;
     }
 
@@ -34,6 +37,7 @@
       width: 20px;
       height: 3px;
       background: set-text-color($primary-color);
+
       @include transition-ease;
     }
 
@@ -77,6 +81,7 @@
     list-style-type: none;
     padding-right: 1rem;
     transform: translateY(-100%);
+
     @include transition-ease;
 
     &.open {
@@ -85,14 +90,15 @@
 
     &_item {
       transform: translateX(20vw);
+
       @include transition-ease;
 
       &.open {
-       transform: translateX(0); 
+        transform: translateX(0);
       }
 
       &.active > a {
-        color: $primary-color;
+        color: $secondary-color;
       }
     }
 
@@ -102,6 +108,7 @@
       text-transform: uppercase;
       padding: 1rem 0;
       font-weight: 300;
+
       @include transition-ease;
 
       &:hover {
