@@ -223,6 +223,8 @@
 #projects_bio-image p {
   margin-bottom: 5rem;
   font-size: 1.5rem;
+  width: 80%;
+  text-align: center;
 }
 #projects_bio-image .text-secondary {
   font-size: 2rem;
