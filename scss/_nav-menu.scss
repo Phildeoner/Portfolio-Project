@@ -75,7 +75,7 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 40vh;
     overflow: hidden;
     background: $secondary-color;
     list-style-type: none;
@@ -89,7 +89,7 @@
     }
 
     &_item {
-      transform: translateX(20vw);
+      transform: translateX(30vw);
 
       @include transition-ease;
 
@@ -104,10 +104,10 @@
 
     &_link {
       display: inline-block;
-      font-size: 2rem;
+      font-size: 1rem;
       text-transform: uppercase;
       padding: 1rem 0;
-      font-weight: 300;
+      font-weight: 400;
 
       @include transition-ease;
 

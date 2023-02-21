@@ -1,9 +1,9 @@
 @include media-sm {
-
+  
 }
 
 @include media-md {
-  .menu-btn {
+    .menu-btn {
     visibility: hidden;
   }
 
