@@ -1,10 +1,10 @@
+@import 'variables';
 @import 'about';
 @import 'contact';
 @import 'home';
 @import 'nav-menu';
 @import 'projects';
 @import 'responsive';
-@import 'variables';
 
 body {
   background: $primary-color;
@@ -15,7 +15,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 a {
@@ -37,11 +37,12 @@ header {
 main {
   height: 100%;
   width: 100%;
+  }
 
   .social-icons {
     position: fixed;
-    bottom: 1rem;
-    left: 1rem;
+    bottom: 0.5rem;
+    left: 0;
 
     a {
       padding: 0.4rem;
@@ -52,14 +53,15 @@ main {
       }
     }
   }
-}
 
 footer {
   font-size: 1rem;
   position: fixed;
-  bottom: 0.4rem;
-  right: 1rem;
+  bottom: 0;
+  right: 0;
   text-align: right;
   padding: 1rem;
   color: set-text-color($primary-color);
+  background-color: $primary-color;
+  width: 100%;
 }

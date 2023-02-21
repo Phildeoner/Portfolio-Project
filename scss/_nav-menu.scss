@@ -56,10 +56,11 @@
 .nav {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100vw;
   opacity: 0.98;
   visibility: hidden;
+  background-color: $primary-color;
 
   &.open {
     visibility: visible;
@@ -70,9 +71,9 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 50vh;
     overflow: hidden;
-    background: $primary-color;
+    background: $secondary-color;
     list-style-type: none;
     padding-right: 1rem;
     transform: translateY(-100%);
@@ -83,7 +84,7 @@
     }
 
     &_item {
-      transform: translateX(100vw);
+      transform: translateX(20vw);
       @include transition-ease;
 
       &.open {
@@ -91,7 +92,7 @@
       }
 
       &.active > a {
-        color: $secondary-color;
+        color: $primary-color;
       }
     }
 
@@ -99,7 +100,7 @@
       display: inline-block;
       font-size: 2rem;
       text-transform: uppercase;
-      padding: 2rem 0;
+      padding: 1rem 0;
       font-weight: 300;
       @include transition-ease;
 

@@ -1,3 +1,7 @@
+@include media-sm {
+  
+}
+
 @include media-md {
   .menu-btn {
     visibility: hidden;
@@ -24,11 +28,11 @@
     }
   }
 
-  .about_bio {
+  #about_bio {
     font-size: 1.5rem;
   }
 
-  .projects {
+  #projects {
     &_bio-image {
       height: 40vh;
     }
@@ -40,24 +44,24 @@
     }
   }
 
-  .contact_list {
+  #contact_list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @include media-lg {
-  .projects {
-    &__items {
+  #projects {
+    &_items {
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  .contact_list {
+  #contact_list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @include media-xl {
-  .projects_bio-image {
+  #projects_bio-image {
     height: 50vh;
   }
 }

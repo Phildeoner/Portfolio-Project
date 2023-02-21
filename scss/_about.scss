@@ -1,4 +1,4 @@
-.about {
+#about {
   padding-bottom: 2rem;
 
   &_bio-image {
@@ -10,7 +10,7 @@
         rgba($primary-color, 0.9),
         rgba($primary-color, 0.3)
       ),
-      url('../img/model-1.jpg') center top;
+      url('/images/bg-hero-desktop.svg') center top;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@
     justify-content: flex-end;
 
     p {
-      margin-bottom: 2rem;
+      margin-bottom: 5rem;
     }
   }
 
@@ -50,11 +50,6 @@
         margin: 0.3rem 0;
       }
     }
-  }
-
-  .social-icons {
-    display: flex;
-    flex-direction: column;
   }
   
 }

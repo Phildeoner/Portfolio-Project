@@ -1,4 +1,4 @@
-.home {
+#home {
   height: 100%;
   padding-top: 40vh;
   overflow: hidden;
@@ -14,10 +14,13 @@
   background-size: cover;
 
   &_name {
-    font-size: 5rem;
+    font-size: 3.5rem;
     padding-bottom: 1rem;
+    margin: auto;
     margin-bottom: 1rem;
     border-bottom: 2px solid set-text-color($primary-color);
+    width: fit-content;
+    text-align: center;
 
     &-last {
       color: $secondary-color;
@@ -25,3 +28,4 @@
     }
   }
 }
+

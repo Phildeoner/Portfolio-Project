@@ -1,4 +1,4 @@
-.contact {
+#contact {
   height: 100%;
   padding-top: 40vh;
   overflow: hidden;
@@ -24,10 +24,5 @@
     grid-template-columns: 1fr;
     grid-gap: 2rem;
     font-size: 1.5rem;
-  }
-
-  .social-icons {
-    position: initial;
-    margin-top: 2rem;
   }
 }
