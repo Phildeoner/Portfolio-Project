@@ -1,8 +1,74 @@
-$primary-color: blue;
-$secondary-color:orange;
-$background-color:gray;
+@import "variables";
+@import "about";
+@import "contact";
+@import "home";
+@import "nav-menu";
+@import "projects";
+@import "responsive";
 
 body {
-  background-color: $background-color;
-  color: $primary-color;
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+
+a {
+  color: set-text-color($primary-color);
+  text-decoration: none;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+p {
+  text-align: justify;
+}
+
+.social-icons {
+  position: fixed;
+  bottom: 0.5rem;
+  left: 0;
+
+  a {
+    padding: 0.4rem;
+
+    &:hover {
+      color: $secondary-color;
+    }
+
+    @include transition-ease;
+  }
+}
+
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  padding: 1rem;
+  color: set-text-color($primary-color);
+  background-color: $primary-color;
+  width: 100%;
 }
