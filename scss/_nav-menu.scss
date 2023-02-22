@@ -1,4 +1,6 @@
 .menu-btn {
+  @include transition-ease;
+
   position: absolute;
   z-index: 1;
   right: 1rem;
@@ -7,9 +9,9 @@
   width: 28px;
   cursor: pointer;
 
-  @include transition-ease;
-
   &_options {
+    @include transition-ease;
+
     position: absolute;
     right: 0;
     top: 0.5rem;
@@ -17,28 +19,26 @@
     height: 3px;
     background: set-text-color($primary-color);
 
-    @include transition-ease;
-
     &::before {
+      @include transition-ease;
+
       content: '';
       position: absolute;
       top: -8px;
       width: 28px;
       height: 3px;
       background: set-text-color($primary-color);
-
-      @include transition-ease;
     }
 
     &::after {
+      @include transition-ease;
+
       content: '';
       position: absolute;
       top: 8px;
       width: 20px;
       height: 3px;
       background: set-text-color($primary-color);
-
-      @include transition-ease;
     }
 
     &.open {
@@ -71,6 +71,8 @@
   }
 
   .menu-nav {
+    @include transition-ease;
+
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -82,16 +84,14 @@
     padding-right: 1rem;
     transform: translateY(-100%);
 
-    @include transition-ease;
-
     &.open {
       transform: translateY(0);
     }
 
     &_item {
-      transform: translateX(30vw);
-
       @include transition-ease;
+
+      transform: translateX(30vw);
 
       &.open {
         transform: translateX(0);
@@ -103,23 +103,23 @@
     }
 
     &_link {
+      @include transition-ease;
+
       display: inline-block;
       font-size: 1rem;
       text-transform: uppercase;
       padding: 1rem 0;
       font-weight: 400;
 
-      @include transition-ease;
-
       &:hover {
         color: $secondary-color;
       }
     }
   }
-}
 
-@for $i from 1 through 4 {
-  .menu-nav_item:nth-child(#{$i}) {
-    transition-delay: ($i * 0.1s) + 0.15s;
+  @for $i from 1 through 4 {
+    .menu-nav_item:nth-child(#{$i}) {
+      transition-delay: ($i * 0.1s) + 0.15s;
+    }
   }
 }

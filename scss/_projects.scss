@@ -4,13 +4,7 @@
   &_bio-image {
     height: 40vh;
     width: 100%;
-    background:
-      linear-gradient(
-        to right,
-        rgba($primary-color, 0.9),
-        rgba($primary-color, 0.3)
-      ),
-      url('/images/bg-hero-mobile.svg') center top;
+    background: linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.3)), url('/images/bg-hero-mobile.svg') center top;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -27,6 +21,17 @@
     .text-secondary {
       font-size: 2rem;
       margin-bottom: 1rem;
+    }
+  }
+
+  &_btn {
+    @include transition-ease;
+
+    opacity: 0;
+    color: set-text-color($secondary-color);
+
+    &:hover {
+      color: set-text-color(set-text-color($secondary-color));
     }
   }
 
@@ -49,6 +54,8 @@
     }
 
     &::after {
+      @include transition-ease;
+
       content: '';
       position: absolute;
       top: 100%;
@@ -57,8 +64,6 @@
       width: 100%;
       background: $secondary-color;
       opacity: 0;
-
-      @include transition-ease;
     }
 
     &:hover {
@@ -83,16 +88,5 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: center;
-  }
-
-  &_btn {
-    opacity: 0;
-    color: set-text-color($secondary-color);
-
-    @include transition-ease;
-
-    &:hover {
-      color: set-text-color(set-text-color($secondary-color));
-    }
   }
 }

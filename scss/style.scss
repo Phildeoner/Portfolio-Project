@@ -1,16 +1,16 @@
-@import 'variables';
-@import 'about';
-@import 'contact';
-@import 'home';
-@import 'nav-menu';
-@import 'projects';
-@import 'responsive';
+@import "variables";
+@import "about";
+@import "contact";
+@import "home";
+@import "nav-menu";
+@import "projects";
+@import "responsive";
 
 body {
   background: $primary-color;
   color: set-text-color($primary-color);
   height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
 }
 
@@ -44,6 +44,7 @@ main {
 p {
   text-align: justify;
 }
+
 .social-icons {
   position: fixed;
   bottom: 0.5rem;
@@ -52,11 +53,11 @@ p {
   a {
     padding: 0.4rem;
 
-    @include transition-ease;
-
     &:hover {
       color: $secondary-color;
     }
+
+    @include transition-ease;
   }
 }
 
