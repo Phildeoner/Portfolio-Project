@@ -62,6 +62,13 @@ p {
   border-bottom: 5px solid #f5981e;
 }
 
+#projects_bio-image p {
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+  width: 80%;
+  text-align: center;
+}
+
 #about .jobs_job p {
   font-size: 18px;
 }
@@ -82,7 +89,7 @@ h3 {
   margin: 0.5rem 0;
 }
 
-#about .jobs_job h6 {
+#about .jobs_job h4 {
   margin: 0.3rem 0;
 }
 
@@ -129,12 +136,12 @@ h3 {
 
 #home_name {
   font-size: 3.5rem;
+  padding: 0.5rem;
   padding-bottom: 1rem;
   margin: auto;
   margin-bottom: 1rem;
   border-bottom: 3px solid #f5981e;
   border-left: 3px solid #f5981e;
-  padding: 0.5rem;
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
@@ -145,8 +152,8 @@ h3 {
 }
 
 @keyframes text1 {
-  0% {left: -1000px;}
-  100% {left: 0;}
+  0% { left: -1000px; }
+  100% { left: 0; }
 }
 
 #home_text2 {
@@ -156,8 +163,8 @@ h3 {
 }
 
 @keyframes text2 {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 #home_name-last {
@@ -327,13 +334,6 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-}
-
-#projects_bio-image p {
-  margin-bottom: 2.5rem;
-  font-size: 1.5rem;
-  width: 80%;
-  text-align: center;
 }
 
 #projects_bio-image .text-secondary {
