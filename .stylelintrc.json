@@ -3,7 +3,9 @@
     "plugins": ["stylelint-scss", "stylelint-csstree-validator"],
     "rules": {
       "at-rule-no-unknown": [
-        null,
+        null, {
+          "ignoreAtRules": ["function", "if", "each", "include", "mixin"]
+        },
         {
           "ignoreAtRules": ["tailwind", "apply", "variants", "responsive", "screen"]
         }
