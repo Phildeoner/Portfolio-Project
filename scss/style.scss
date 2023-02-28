@@ -52,9 +52,12 @@ p {
 
   a {
     padding: 0.4rem;
+    transition: 0.7s;
+    transition-property: transform;
 
     &:hover {
       color: $secondary-color;
+      transform: scale(1.2);
     }
 
     @include transition-ease;

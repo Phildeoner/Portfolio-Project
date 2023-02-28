@@ -13,6 +13,19 @@
     url('/images/New\ Project\ edit.jpg') center top;
   background-size: cover;
 
+  &_text2 {
+    animation: text2;
+    display: inline-block;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes text2 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
   &_name {
     font-size: 3.5rem;
     padding-bottom: 1rem;
@@ -21,10 +34,34 @@
     border-bottom: 2px solid set-text-color($primary-color);
     width: fit-content;
     text-align: center;
+    animation: text1;
+    display: inline-block;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 
     &-last {
       color: $secondary-color;
       font-weight: 700;
     }
+  }
+
+  @keyframes text1 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+}
+
+#mainText {
+  cursor: pointer;
+  transition: 0.7s;
+  transition-property: transform;
+
+  &:hover {
+    transform: scale(1.2);
+    background: rgba(155, 100, 30, .1);
+    border: $secondary-color;
+    border-radius: 15px;
+    padding: 10px;
   }
 }
