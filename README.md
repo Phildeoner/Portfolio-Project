@@ -68,19 +68,19 @@ To access and navigate around this page after executing the steps above, follow 
 
 1. As shown in the introductory image above which is the home or landing page, on full screen view the navigation bar is visible to navigate around the page or you can choose to scroll down.
 
-2. ![about page](https://github.com/Phildeoner/Portfolio-Project/blob/project-branch/Project-screenshots/About.png) The above Interface will be seen when you tap on the about me link on the navigation bar.
+2. The About Me link on the navigation bar leads to the about me page containing information about the owner.
 
-3. ![project page](https://github.com/Phildeoner/Portfolio-Project/blob/project-branch/Project-screenshots/Projects.png) The image above shows a list of projects after tapping on the my project link on the nav bar.
+3. The My Project link on the navigation leads to a list of projects done by the owner.
 
-4. ![contact page](https://github.com/Phildeoner/Portfolio-Project/blob/project-branch/Project-screenshots/Contact.png) The contact button or link on the nav bar brings you to the contact page as seen above.
+4. The contact button or link on the nav bar directs to the contact page containing email, address and phone number.
 
-5. ![Medium screen view](https://github.com/Phildeoner/Portfolio-Project/blob/project-branch/Project-screenshots/Responsive.png) When the screen is at a medium size the nav bar is hidden and the three line option icon by the top right is displayed as shown in the above image.
+5. When the screen is at a medium size the nav bar is hidden and the three line option icon by the top right is displayed.
 
-6. ![Nav bar open](https://github.com/Phildeoner/Portfolio-Project/blob/project-branch/Project-screenshots/navOpen.png) When the icon as said in step five above is tapped the above interface is seen containing the navigations.
+6. When the icon as said in step five above is tapped, it displays navigations.
 
-7. ![Project small](https://github.com/Phildeoner/Portfolio-Project/blob/project-branch/Project-screenshots/Projectsmall.png) The project images are rescaled for small screens and the display turns to column.
+7. The project images are rescaled for small screens and the display turns to column.
 
-8. ![Project Medium](https://github.com/Phildeoner/Portfolio-Project/blob/project-branch/Project-screenshots/Projectmd.png) For medium screens, the project page is adjusted to the above view.
+8. For medium screens, the project page is adjusted two items on a row display.
 
 <u>[Go Back One Step](#started)</u>
 
