@@ -106,7 +106,7 @@ h3 {
       rgba(39, 39, 39, 0.9),
       rgba(39, 39, 39, 0.3)
     ),
-    url("/6\ Flat\ Background\ Design\ Landing\ Page\ PNG\ SVG\ and\ Adobe\ XD.jpg")
+    url("./images/6\ Flat\ Background\ Design\ Landing\ Page\ PNG\ SVG\ and\ Adobe\ XD.jpg")
     center top;
   background-size: cover;
 }
@@ -130,7 +130,7 @@ h3 {
       rgba(39, 39, 39, 0.9),
       rgba(39, 39, 39, 0.3)
     ),
-    url("/New\ Project\ edit.jpg") center top;
+    url("./images/New\ Project\ edit.jpg") center top;
   background-size: cover;
 }
 
@@ -328,7 +328,7 @@ a {
       rgba(39, 39, 39, 0.9),
       rgba(39, 39, 39, 0.3)
     ),
-    url("/bg-hero-mobile.svg") center top;
+    url("./images/bg-hero-mobile.svg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
