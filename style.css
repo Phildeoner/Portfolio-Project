@@ -17,7 +17,7 @@
       rgba(39, 39, 39, 0.9),
       rgba(39, 39, 39, 0.3)
     ),
-    url("/bg-hero-desktop.svg") center top;
+    url("./images/bg-hero-desktop.svg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
