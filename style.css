@@ -17,7 +17,7 @@
       rgba(39, 39, 39, 0.9),
       rgba(39, 39, 39, 0.3)
     ),
-    url("https://github.com/Phildeoner/Portfolio-Project/blob/cace5e1247f1699faeb999c444e6cdf22be7e301/images/bg-hero-desktop.svg") center top;
+    url("https://github.com/Phildeoner/Portfolio-Project/blob/project-branch/bg-hero-desktop.svg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -106,7 +106,7 @@ h3 {
       rgba(39, 39, 39, 0.9),
       rgba(39, 39, 39, 0.3)
     ),
-    url("https://github.com/Phildeoner/Portfolio-Project/blob/16c18f2bceb1c22245ad21a90105d91415be3fd7/images/6%20Flat%20Background%20Design%20Landing%20Page%20PNG%20SVG%20and%20Adobe%20XD.jpg")
+    url("https://github.com/Phildeoner/Portfolio-Project/blob/project-branch/6%20Flat%20Background%20Design%20Landing%20Page%20PNG%20SVG%20and%20Adobe%20XD.jpg")
     center top;
   background-size: cover;
 }
@@ -130,7 +130,7 @@ h3 {
       rgba(39, 39, 39, 0.9),
       rgba(39, 39, 39, 0.3)
     ),
-    url("https://github.com/Phildeoner/Portfolio-Project/blob/16c18f2bceb1c22245ad21a90105d91415be3fd7/images/New%20Project%20edit.jpg") center top;
+    url("https://github.com/Phildeoner/Portfolio-Project/blob/project-branch/New%20Project%20edit.jpg") center top;
   background-size: cover;
 }
 
@@ -328,7 +328,7 @@ a {
       rgba(39, 39, 39, 0.9),
       rgba(39, 39, 39, 0.3)
     ),
-    url("https://github.com/Phildeoner/Portfolio-Project/blob/cace5e1247f1699faeb999c444e6cdf22be7e301/images/bg-hero-mobile.svg") center top;
+    url("https://github.com/Phildeoner/Portfolio-Project/blob/project-branch/bg-hero-mobile.svg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
