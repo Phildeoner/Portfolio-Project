@@ -26,17 +26,28 @@ function toggleMenu() {
 
 menuBtn.addEventListener('click', toggleMenu);
 
-
-function sendEmail() {
-  Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "phildeoner2020@gmail.com",
-    Password : "D2C30E7CF45CD482CD7422C300B705FB477A",
-    To : 'phildeoner@gmail.com',
-    From : document.getElementById('email').value,
-    Subject : document.getElementById('subject').value,
-    Body : document.getElementById('message').value
-  }).then(
-    message => alert('Message Successfully Sent')
-  );
-}
+window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};     
+      formbutton("create", {
+        action: "https://formspree.io/f/xdovzlev",
+        title: "Message Me!",
+        fields: [
+        { 
+            type: "text",  
+            name: "subject",
+            required: true,
+            placeholder: "Subject"
+          },
+          { 
+            type: "email", 
+            name: "email",
+            required: true,
+            placeholder: "Enter email address"
+          },
+          {
+            type: "textarea",
+            name: "message",
+            placeholder: "Type your message",
+          },
+          { type: "submit" }      
+        ],
+      });

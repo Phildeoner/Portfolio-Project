@@ -599,13 +599,18 @@ main {
 }
 
 footer {
-  font-size: 1rem;
   position: fixed;
   bottom: 0;
-  right: 0;
-  text-align: right;
+  right:0;
   padding: 1rem;
   color: #fff;
   background-color: #272727;
   width: 100%;
+}
+
+footer p {
+  font-size: 0.8rem;
+  text-align: right;
+  margin-right: 3.5rem;
+  bottom: 0;
 }
