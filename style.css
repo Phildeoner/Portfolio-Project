@@ -9,7 +9,7 @@
 }
 
 #about_bio-image {
-  height: 35vh;
+  height: 25vh;
   width: 100%;
   background:
     linear-gradient(
@@ -30,7 +30,7 @@ p {
 }
 
 #about_bio-image p {
-  margin-bottom: 1rem;
+  margin-bottom: rem;
   text-align: justify;
   height: 15vh;
 }
@@ -80,7 +80,7 @@ h3 {
 }
 
 #contact h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
@@ -95,7 +95,7 @@ h3 {
 
 #contact {
   height: 100%;
-  padding-top: 25vh;
+  padding-top: 2.7vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -115,12 +115,12 @@ h3 {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 #home {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 35vh;
   overflow: hidden;
   align-items: center;
   text-align: center;
@@ -130,12 +130,12 @@ h3 {
       rgba(39, 39, 39, 0.9),
       rgba(39, 39, 39, 0.3)
     ),
-    url("./images/New\ Project\ edit.jpg") center top;
+    url("./images/New\ Project\ edit2.jpg") center top;
   background-size: cover;
 }
 
 #home_name {
-  font-size: 3.5rem;
+  font-size: 2rem;
   padding: 0.5rem;
   padding-bottom: 1rem;
   margin: auto;
@@ -157,6 +157,7 @@ h3 {
 }
 
 #home_text2 {
+  font-size: 1rem;
   animation: text2;
   animation-duration: 5s;
   animation-fill-mode: forwards;
@@ -338,7 +339,7 @@ a {
 
 #projects_bio-image .text-secondary {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 #projects_items {
@@ -433,8 +434,16 @@ a {
     font-size: 1.5rem;
   }
 
+  #about_bio-image {
+    height: 40vh;
+  }
+
+  #about_bio-image p {
+    margin-bottom: 1.2rem;
+  }
+
   #projects_bio-image {
-    height: 30vh;
+    height: 32vh;
   }
 
   #projects_items {
@@ -445,8 +454,37 @@ a {
     font-size: 3rem;
   }
 
+  #contact {
+    padding-top: 10vh;
+  }
+
+  #contact h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
   #contact_list {
     grid-template-columns: repeat(2, 1fr);
+    font-size: 1.7rem;
+  }
+
+  #home {
+    background:
+    linear-gradient(
+      to right,
+      rgba(39, 39, 39, 0.9),
+      rgba(39, 39, 39, 0.3)
+    ),
+    url("./images/New\ Project\ edit.jpg") center top;
+  background-size: cover;
+  }
+
+  #home_name {
+    font-size: 3.5rem;
+  }
+
+  #home_text2 {
+    font-size: 2rem;
   }
 }
 
@@ -457,6 +495,10 @@ a {
 
   #contact_list {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  #contact {
+    padding-top: 15vh;
   }
 }
 
@@ -484,6 +526,61 @@ header {
 main {
   height: 100%;
   width: 100%;
+}
+
+.contact-box {
+  width: 400px;
+}
+
+.contact-box h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.contact-box input {
+  width: 100%;
+  height: 2rem;
+  padding: 0 0.5rem;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid orange;
+  background-color: #fff9f177;
+}
+
+.contact-box input:focus {
+  border: 1px solid #000;
+  outline: 0;
+}
+
+.contact-box textarea {
+  width: 100%;
+  height: 6rem;
+  padding: 0.5rem;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid orange;
+  background-color: #fff9f177;
+}
+
+.contact-box textarea:focus {
+  border: 1px solid #000;
+  outline: 0;
+}
+
+.contact-box button {
+  border: 0;
+  padding: 7px 20px;
+  background-color: #f5981e;
+  border-radius: 6px;
+  font-size: 15px;
+  box-shadow: 2px 1px 1px;
+}
+
+.contact-box button:hover {
+  background-color: #f5981ea6;
+  color: white;
+  cursor: pointer;
 }
 
 .social-icons {
