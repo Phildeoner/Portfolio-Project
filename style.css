@@ -73,6 +73,12 @@ p {
   font-size: 18px;
 }
 
+#about .jobs_job li {
+  margin-left: 20px;
+  margin-top: 5px;
+  text-align: justify;
+}
+
 h1,
 h2,
 h3 {
@@ -486,6 +492,10 @@ a {
   #home_text2 {
     font-size: 2rem;
   }
+
+  #contact-box {
+    width: 500px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -528,17 +538,17 @@ main {
   width: 100%;
 }
 
-.contact-box {
-  width: 400px;
+#contact-box {
+  width: 350px;
 }
 
-.contact-box h3 {
+#contact-box h3 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   margin-top: 2rem;
 }
 
-.contact-box input {
+#contact-box input {
   width: 100%;
   height: 2rem;
   padding: 0 0.5rem;
@@ -548,12 +558,12 @@ main {
   background-color: #fff9f177;
 }
 
-.contact-box input:focus {
+#contact-box input:focus {
   border: 1px solid #000;
   outline: 0;
 }
 
-.contact-box textarea {
+#contact-box textarea {
   width: 100%;
   height: 6rem;
   padding: 0.5rem;
@@ -563,12 +573,12 @@ main {
   background-color: #fff9f177;
 }
 
-.contact-box textarea:focus {
+#contact-box textarea:focus {
   border: 1px solid #000;
   outline: 0;
 }
 
-.contact-box button {
+#contact-box button {
   border: 0;
   padding: 7px 20px;
   background-color: #f5981e;
@@ -577,7 +587,7 @@ main {
   box-shadow: 2px 1px 1px;
 }
 
-.contact-box button:hover {
+#contact-box button:hover {
   background-color: #f5981ea6;
   color: white;
   cursor: pointer;
