@@ -261,10 +261,10 @@
 
       <div id="contact-box">
         <h3>Message me</h3>
-        <form action="#">
-          <input type="text" name="Subject" placeholder="subject">
-          <input type="email" name="email" placeholder="Enter email address">
-          <textarea name="Message" placeholder="Type your message"></textarea>
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <input id="subject" type="text" name="Subject" placeholder="subject">
+          <input id="email" type="email" name="email" placeholder="Enter email address">
+          <textarea id="message" name="Message" placeholder="Type your message"></textarea>
           <button type="submit">Send Message</button>
         </form>
       </div>
@@ -284,5 +284,6 @@
 
     <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
     <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>

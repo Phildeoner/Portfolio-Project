@@ -25,3 +25,18 @@ function toggleMenu() {
 }
 
 menuBtn.addEventListener('click', toggleMenu);
+
+
+function sendEmail() {
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "phildeoner2020@gmail.com",
+    Password : "D2C30E7CF45CD482CD7422C300B705FB477A",
+    To : 'phildeoner@gmail.com',
+    From : document.getElementById('email').value,
+    Subject : document.getElementById('subject').value,
+    Body : document.getElementById('message').value
+  }).then(
+    message => alert('Message Successfully Sent')
+  );
+}
