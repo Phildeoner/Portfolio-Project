@@ -2,7 +2,7 @@
 
 [![Status badge](https://img.shields.io/badge/CONTRIBUTORS-0-red.svg)](https://shields.io/) 
 [![Status badge](https://img.shields.io/badge/FORKS-0-yellow.svg?style=plastic&logo=appveyor)](https://shields.io/) 
-[![Status badge](https://img.shields.io/badge/REVIEWS-0-<red>.svg?style=plastic&logo=appveyor)](https://shields.io/) 
+[![Status badge](https://img.shields.io/badge/REVIEWS-2-<red>.svg?style=plastic&logo=appveyor)](https://shields.io/) 
 [![Status badge](https://img.shields.io/badge/STARS-0-red.svg?style=plastic&logo=appveyor)](https://shields.io/) 
 [![Status badge](https://img.shields.io/badge/ISSUES-0-red.svg?style=plastic&logo=appveyor)](https://shields.io/) 
 [![Status badge](https://img.shields.io/badge/LICENSE-0-blue.svg?style=plastic&logo=appveyor)](https://shields.io/) 
@@ -55,7 +55,7 @@
 ---
 To assess this webpage, here are simple steps to follow:
 1. Open your browser
-2. In the search or input box, type in the portfolio web address and you will be directed to the home page.
+2. In the search or input box, type in the portfolio web address https://phildeoner.github.io/Portfolio-Project/ and you will be directed to the home page.
 
     <u>[Go Back One Step](#built)</u>
 
