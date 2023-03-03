@@ -1,0 +1,478 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#about {
+  padding-bottom: 2rem;
+}
+
+#about_bio-image {
+  height: 50vh;
+  width: 100%;
+  background:
+    linear-gradient(
+      to right,
+      rgba(39, 39, 39, 0.9),
+      rgba(39, 39, 39, 0.3)
+    ),
+    url("/images/bg-hero-desktop.svg") center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+p {
+  text-align: justify;
+}
+
+#about_bio-image p {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+#about_bio {
+  width: 80%;
+  text-align: center;
+}
+
+.text-secondary {
+  color: #f5981e;
+}
+
+#about_bio .text-secondary {
+  padding-bottom: 1rem;
+}
+
+#about .jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+#about .jobs_job {
+  background: #414141;
+  padding: 0.5rem;
+  border-bottom: 5px solid #f5981e;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+
+#contact h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#about .jobs_job h2,
+#about .jobs_job h3 {
+  margin: 0.5rem 0;
+}
+
+#about .jobs_job h6 {
+  margin: 0.3rem 0;
+}
+
+#contact {
+  height: 100%;
+  padding-top: 30vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:
+    linear-gradient(
+      to right,
+      rgba(39, 39, 39, 0.9),
+      rgba(39, 39, 39, 0.3)
+    ),
+    url("/images/6 Flat Background Design Landing Page PNG SVG and Adobe XD.jpg")
+    center top;
+  background-size: cover;
+}
+
+#contact_list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  font-size: 1.5rem;
+}
+
+#home {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background:
+    linear-gradient(
+      to right,
+      rgba(39, 39, 39, 0.9),
+      rgba(39, 39, 39, 0.3)
+    ),
+    url("/images/New Project edit.jpg") center top;
+  background-size: cover;
+}
+
+#home_name {
+  font-size: 3.5rem;
+  padding-bottom: 1rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+#home_name-last {
+  color: #f5981e;
+  font-weight: 700;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_options {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_options::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_options::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 3px;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_options.open {
+  transform: rotate(720deg);
+  background: transparent;
+}
+
+.menu-btn_options.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+
+.menu-btn_options.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+  background-color: #272727;
+}
+
+.nav.open {
+  visibility: visible;
+}
+
+.nav .menu-nav {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  overflow: hidden;
+  background: #f5981e;
+  list-style-type: none;
+  padding-right: 1rem;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .menu-nav.open {
+  transform: translateY(0);
+}
+
+.nav .menu-nav_item {
+  transform: translateX(30vw);
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .menu-nav_item.open {
+  transform: translateX(0);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons a {
+  padding: 0.4rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #f5981e;
+}
+
+.nav .menu-nav_item.active > a {
+  color: #f5981e;
+}
+
+.nav .menu-nav_link {
+  display: inline-block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .menu-nav_link:hover {
+  color: #f5981e;
+}
+
+.menu-nav_item:nth-child(1) {
+  transition-delay: 0.25s;
+}
+
+.menu-nav_item:nth-child(2) {
+  transition-delay: 0.35s;
+}
+
+.menu-nav_item:nth-child(3) {
+  transition-delay: 0.45s;
+}
+
+.menu-nav_item:nth-child(4) {
+  transition-delay: 0.55s;
+}
+
+#projects {
+  padding-bottom: 2rem;
+}
+
+#projects_bio-image {
+  height: 40vh;
+  width: 100%;
+  background:
+    linear-gradient(
+      to right,
+      rgba(39, 39, 39, 0.9),
+      rgba(39, 39, 39, 0.3)
+    ),
+    url("/images/bg-hero-mobile.svg") center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#projects_bio-image p {
+  margin-bottom: 5rem;
+  font-size: 1.5rem;
+  width: 80%;
+  text-align: center;
+}
+
+#projects_bio-image .text-secondary {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#projects_items {
+  width: 55vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+#projects_item {
+  position: relative;
+  border-bottom: 5px solid #f5981e;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#projects_item img {
+  width: 100%;
+}
+
+#projects_item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #f5981e;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+#projects_item:hover::after {
+  top: 0;
+  opacity: 0.8;
+}
+
+#projects_btn {
+  opacity: 0;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+}
+
+#projects_btn:hover {
+  color: #fff;
+}
+
+#projects_item:hover #projects_btn {
+  opacity: 1;
+}
+
+#projects_btns {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+
+  .nav {
+    visibility: visible;
+  }
+
+  .nav .menu-nav {
+    display: block;
+    transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+
+  .nav .menu-nav_item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+
+  .nav .menu-nav_link {
+    font-size: 1.5rem;
+  }
+
+  #about_bio {
+    font-size: 1.5rem;
+  }
+
+  #projects_bio-image {
+    height: 40vh;
+  }
+
+  #projects_items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #projects .text-secondary {
+    font-size: 3rem;
+  }
+
+  #contact_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #projects_items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #contact_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #projects_bio-image {
+    height: 50vh;
+  }
+}
+
+body {
+  background: #272727;
+  color: #fff;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.social-icons {
+  position: fixed;
+  bottom: 0.5rem;
+  left: 0;
+}
+
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  padding: 1rem;
+  color: #fff;
+  background-color: #272727;
+  width: 100%;
+}
