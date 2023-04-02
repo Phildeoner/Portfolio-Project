@@ -328,6 +328,7 @@ a {
 #projects_bio-image {
   height: 25vh;
   width: 100%;
+  position: relative;
   background:
     linear-gradient(
       to right,
