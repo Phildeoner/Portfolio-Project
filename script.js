@@ -69,4 +69,13 @@ window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).
           },
           { type: "submit" }      
         ],
+        styles: {
+          title: {
+            backgroundColor: '#414141',
+          },
+          button: {
+            backgroundColor: '#414141',
+          },
+        },
+        initiallyVisible: true,
       });
