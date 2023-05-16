@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 #about {
@@ -46,6 +47,10 @@ p {
 
 #about_bio .text-secondary {
   padding-bottom: 1rem;
+}
+
+.active {
+  color: #f5981e;
 }
 
 #about .jobs {
