@@ -77,5 +77,5 @@ window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).
             backgroundColor: '#414141',
           },
         },
-        initiallyVisible: true,
+        initiallyVisible: false,
       });
